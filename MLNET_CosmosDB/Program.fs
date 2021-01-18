@@ -42,7 +42,7 @@ let readData filePath =
 let main argv =
     let data = readData "./diabetes_data.csv"
 
-    let connection = "AccountEndpoint=https://mlnetdb.documents.azure.com:443/;AccountKey=KJGhLmEsTyQ9RKMTpzxHKietydA3dyfO2HIVEqrvGHTaUUidox2vPXtM2U6lB2K8AMjQ8yKtfkctRPki6QF7xA==;";
+    let connection = "";
 
     let newData = data |> List.mapi (fun i d ->
             let row = d.Split(',')
